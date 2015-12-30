@@ -1,0 +1,24 @@
+<ion-view view-title="Intro">
+
+	<ion-content class="padding">
+
+		<div my-customer ng-show="isLoading"></div>
+
+
+		<button class="button button-positive no-animation" 
+			ng-show="hasData"
+			ng-click="startApp()">
+			Go to homescreen
+		</button> 
+
+		<button class="button button-positive no-animation"
+			ng-show="!hasData" 
+			ng-click="startSignup()">
+			Begin
+		</button> 
+
+	</ion-content>
+
+
+
+</ion-view>

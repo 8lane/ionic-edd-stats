@@ -1,0 +1,17 @@
+<ion-view align-title="right" hide-back-button="true" view-title="Home">
+    <ion-nav-buttons side="left">
+		<button class="button button-clear button-positive icon ion-gear-a" 
+			ng-click="startSettings()">
+		</button>
+    </ion-nav-buttons>
+	<ion-nav-bar align-title="center"></ion-nav-bar>
+    <ion-nav-buttons side="right">
+		<button class="button button-clear button-positive icon ion-refresh" 
+			ng-click="startRefresh()">
+		</button>
+    </ion-nav-buttons>
+
+	<ion-content class="padding">
+		<h2 ng-show="EDD">Earnings: {{EDD.earnings.current_month}}</h2>
+	</ion-content>
+</ion-view>

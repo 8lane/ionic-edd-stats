@@ -1,0 +1,32 @@
+<ion-view view-title="Signup">
+
+	<ion-content padding ng-controller="SignupCtrl">
+
+		<form name="EDDStats_Form" class="list list-inset">
+			<label class="item item-input">
+				<span class="input-label">Wordpress URL</span>
+				<input type="url" name="edd-url" required
+					ng-model="site.url"
+					ng-model-options="{ updateOn: 'default blur' }">
+			</label>
+
+			<label class="item item-input">
+				<span class="input-label">EDD API Key</span>
+				<input type="text" name="edd-key" required
+					ng-model="site.key"
+					ng-model-options="{ updateOn: 'default blur' }">
+			</label>
+
+			<button class="button button-block button-positive no-animation" 
+				ng-disabled="EDDStats_Form.$invalid"
+				ng-click="processForm(site)">
+				Submit
+			</button> 
+			
+			<pre>Site URL = "{{site.url}}"</pre>
+
+		</form>
+
+	</ion-content>
+
+</ion-view>

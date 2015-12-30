@@ -1,0 +1,152 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'angular-localforage' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json eddstats@1.0.0 No repository field.
+5 warn package.json eddstats@1.0.0 No README data
+6 silly cache add args [ 'angular-localforage', null ]
+7 verbose cache add spec angular-localforage
+8 silly cache add parsed spec { raw: 'angular-localforage',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'angular-localforage',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed angular-localforage@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'angular-localforage', range: '*', hasData: false }
+13 silly mapToRegistry name angular-localforage
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/angular-localforage
+17 verbose addNameRange registry:https://registry.npmjs.org/angular-localforage not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/angular-localforage
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 11:53:13 AM
+21 verbose request id b54b7f2924fcbde8
+22 http request GET https://registry.npmjs.org/angular-localforage
+23 http 200 https://registry.npmjs.org/angular-localforage
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"8WTTL8HQYEIC55OY6RISBVHG3"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '20847',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Mon, 18 May 2015 10:53:13 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-lhr6332-LHR',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1431946393.249051,VS0,VE626',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving angular-localforage to /Users/tomchristian/.npm/registry.npmjs.org/angular-localforage/.cache.json
+26 silly addNameRange number 2 { name: 'angular-localforage', range: '*', hasData: true }
+27 silly addNameRange versions [ 'angular-localforage',
+27 silly addNameRange   [ '0.2.9', '0.2.10', '1.0.0', '1.1.0', '1.2.0', '1.2.2' ] ]
+28 verbose addNamed angular-localforage@1.2.2
+29 silly addNamed semver.valid 1.2.2
+30 silly addNamed semver.validRange 1.2.2
+31 silly mapToRegistry name angular-localforage
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/angular-localforage
+35 verbose addRemoteTarball https://registry.npmjs.org/angular-localforage/-/angular-localforage-1.2.2.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-localforage/-/angular-localforage-1.2.2.tgz',
+36 verbose addRemoteTarball   'e328d99c89ca2cc6ff5b43adf38626ff9f5f63d4' ]
+37 info retry fetch attempt 1 at 11:53:13 AM
+38 info attempt registry request try #1 at 11:53:13 AM
+39 http fetch GET https://registry.npmjs.org/angular-localforage/-/angular-localforage-1.2.2.tgz
+40 http fetch 200 https://registry.npmjs.org/angular-localforage/-/angular-localforage-1.2.2.tgz
+41 silly fetchAndShaCheck shasum e328d99c89ca2cc6ff5b43adf38626ff9f5f63d4
+42 verbose addTmpTarball /var/folders/y5/hvg87rq5201fs2yjpn5qnjl80000gn/T/npm-95456-5e78b2ae/registry.npmjs.org/angular-localforage/-/angular-localforage-1.2.2.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for angular-localforage@1.2.2
+44 silly cache afterAdd angular-localforage@1.2.2
+45 verbose afterAdd /Users/tomchristian/.npm/angular-localforage/1.2.2/package/package.json not in flight; writing
+46 verbose afterAdd /Users/tomchristian/.npm/angular-localforage/1.2.2/package/package.json written
+47 silly install resolved [ { name: 'angular-localforage',
+47 silly install resolved     version: '1.2.2',
+47 silly install resolved     description: 'Angular service & directive for https://github.com/mozilla/localForage (Offline storage, improved.)',
+47 silly install resolved     license: 'MIT',
+47 silly install resolved     main: 'dist/angular-localForage.js',
+47 silly install resolved     homepage: 'https://github.com/ocombe/angular-localForage',
+47 silly install resolved     scripts:
+47 silly install resolved      { test: 'karma start ./karma.conf.js',
+47 silly install resolved        'dev-test': 'karma start ./karma.conf.js --browsers="Firefox,Chrome"',
+47 silly install resolved        build: 'gulp build' },
+47 silly install resolved     repository:
+47 silly install resolved      { type: 'git',
+47 silly install resolved        url: 'git://github.com/ocombe/angular-localForage.git' },
+47 silly install resolved     keywords:
+47 silly install resolved      [ 'localstorage',
+47 silly install resolved        'local-storage',
+47 silly install resolved        'localForage',
+47 silly install resolved        'indexDB',
+47 silly install resolved        'webSQL',
+47 silly install resolved        'storage',
+47 silly install resolved        'module',
+47 silly install resolved        'angular',
+47 silly install resolved        'angularJS' ],
+47 silly install resolved     author: { name: 'Olivier Combe', email: 'olivier.combe@gmail.com' },
+47 silly install resolved     bugs: { url: 'https://github.com/ocombe/angular-localForage/issues' },
+47 silly install resolved     devDependencies:
+47 silly install resolved      { 'gulp-rimraf': '~0.1.1',
+47 silly install resolved        gulp: '~3.8.10',
+47 silly install resolved        'gulp-concat': '~2.4.2',
+47 silly install resolved        'gulp-exec': '~2.1.1',
+47 silly install resolved        'gulp-header': '~1.2.2',
+47 silly install resolved        'gulp-json-editor': '~2.2.1',
+47 silly install resolved        'gulp-prompt': '~0.1.1',
+47 silly install resolved        'gulp-rename': '^1.2.0',
+47 silly install resolved        'gulp-uglify': '~1.0.2',
+47 silly install resolved        karma: '~0.12.28',
+47 silly install resolved        'karma-as-promised': '~1.0.0',
+47 silly install resolved        'karma-chrome-launcher': '~0.1.7',
+47 silly install resolved        'karma-cli': '~0.0.4',
+47 silly install resolved        'karma-firefox-launcher': '~0.1.3',
+47 silly install resolved        'karma-jasmine': '~0.3.2',
+47 silly install resolved        'karma-sauce-launcher': '^0.2.10',
+47 silly install resolved        qq: '~0.3.5',
+47 silly install resolved        semver: '~4.1.0',
+47 silly install resolved        streamqueue: '~0.1.1' },
+47 silly install resolved     gitHead: '1d1329b82347472646072fdb66b619600ea83d38',
+47 silly install resolved     _id: 'angular-localforage@1.2.2',
+47 silly install resolved     _shasum: 'e328d99c89ca2cc6ff5b43adf38626ff9f5f63d4',
+47 silly install resolved     _from: 'angular-localforage@*',
+47 silly install resolved     _npmVersion: '1.4.28',
+47 silly install resolved     _npmUser: { name: 'ocombe', email: 'olivier.combe@gmail.com' },
+47 silly install resolved     maintainers: [ [Object] ],
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: 'e328d99c89ca2cc6ff5b43adf38626ff9f5f63d4',
+47 silly install resolved        tarball: 'http://registry.npmjs.org/angular-localforage/-/angular-localforage-1.2.2.tgz' },
+47 silly install resolved     directories: {},
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/angular-localforage/-/angular-localforage-1.2.2.tgz' } ]
+48 info install angular-localforage@1.2.2 into /Users/tomchristian/www/eddstats
+49 info installOne angular-localforage@1.2.2
+50 verbose installOne of angular-localforage to /Users/tomchristian/www/eddstats not in flight; installing
+51 warn locking Error: EACCES, open '/Users/tomchristian/.npm/_locks/angular-localforage-a77611a2fb6da1f3.lock'
+51 warn locking     at Error (native)
+51 warn locking  /Users/tomchristian/.npm/_locks/angular-localforage-a77611a2fb6da1f3.lock failed { [Error: EACCES, open '/Users/tomchristian/.npm/_locks/angular-localforage-a77611a2fb6da1f3.lock']
+51 warn locking   errno: -13,
+51 warn locking   code: 'EACCES',
+51 warn locking   path: '/Users/tomchristian/.npm/_locks/angular-localforage-a77611a2fb6da1f3.lock' }
+52 verbose stack Error: Attempt to unlock /Users/tomchristian/www/eddstats/node_modules/angular-localforage, which hasn't been locked
+52 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+52 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1004:5)
+52 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1008:20
+52 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+52 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+52 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+52 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+53 verbose cwd /Users/tomchristian/www/eddstats
+54 error Darwin 14.3.0
+55 error argv "node" "/usr/local/bin/npm" "install" "angular-localforage"
+56 error node v0.12.2
+57 error npm  v2.7.4
+58 error Attempt to unlock /Users/tomchristian/www/eddstats/node_modules/angular-localforage, which hasn't been locked
+59 error If you need help, you may report this error at:
+59 error     <https://github.com/npm/npm/issues>
+60 verbose exit [ 1, true ]

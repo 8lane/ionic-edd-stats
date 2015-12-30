@@ -1,0 +1,21 @@
+<ion-view view-title="Dashboard" hide-back-button="true">
+
+	<ion-content padding ng-controller="DashCtrl">
+
+		<div class="list" ng-show="EDDStats.data">
+
+			<div class="item item-divider">
+				Earnings
+			</div>
+
+			<a class="item" href="#">Today: {{EDDStats.data.earnings.today}}</a>
+			<a class="item" href="#">This Month: {{EDDStats.data.earnings.current_month}}</a>
+			<a class="item" href="#">Last Month: {{EDDStats.data.earnings.last_month}}</a>
+			<a class="item" href="#">Total Earnings: {{EDDStats.data.earnings.totals}}</a>
+
+		</div>
+
+	    <button ng-click="reset()" class="button button-primary">X</button>
+
+	</ion-content>
+</ion-view>
